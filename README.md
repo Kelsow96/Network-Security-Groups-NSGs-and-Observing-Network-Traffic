@@ -1,4 +1,6 @@
-<img src="https://i.imgur.com/C11N4nJ.png" alt="Azure" width="400">
+<img src="https://i.imgur.com/C11N4nJ.png" alt="Azure" width="400"> ![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/f00cbee9-cc68-4bbd-8c91-003f4687adba)
+
+
 
 <h1> Network Security Groups (NSGs) and Using WireShark to Observe Network Traffic </h1>
 
