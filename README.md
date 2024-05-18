@@ -60,7 +60,7 @@ In this tutorial, we'll be using Remote Desktop Connection (RDP) to connect to o
   <br>
   <br/>
   
--  Next we'll use the credentials we created in the first part of this lab to log into our Windows 10 VM.
+-  Next we'll use the credentials we created in the [first part](https://github.com/Kelsow96/Creating-VM-s-in-Azure-Windows-10-and-Linux-) of this lab to log into our Windows 10 VM.
     - Username: Jane
     - Password: Password1234 <br> <br/>
 ![Capture](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/ad1f3e35-faf5-4fd8-b126-757cec80a3d7)
@@ -105,6 +105,23 @@ In this tutorial, we'll be using Remote Desktop Connection (RDP) to connect to o
 
 - We can now stop our perpetual ping by pressing "ctrl + c" in our Powershell window.
 ![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/aa063e16-77d9-4b0f-a13f-7756afdb0c7a)
+  <br>
+  <br/>
+  
+4. Next we're going filter for SSH traffic in WireShark. Then we're going to use Powershell to SSH into our Linux VM using its Private IP and the User we created in the [first part](https://github.com/Kelsow96/Creating-VM-s-in-Azure-Windows-10-and-Linux-) of this lab.
+    - We'll accomplish this by typing "ssh Jane@10.0.0.5" into our command line.
+![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/6c20233e-56e9-4a3a-b96d-dd3d334960b2)
+
+    -  Once we execute that command we'll be prompted to type in the password for our User. We used the password "Password1234" when creating the VM. We'll type that in (you won't be able to see the password for security reasons) and execute the command.
+![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/669bcd40-f03d-4d50-b4f6-221a10351cd6)
+
+    - We should see that we've succesfully connected to our Linux VM via SSH. We also notice while logging into our Linux VM we can see all the SSH traffic in WireShark.
+![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/b9833d65-2b34-4187-82db-392b1c3beeb1)
+
+    - We can now exit our connection by typing "exit" in our Powershell window.
+![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/4e6c209a-3d39-4c05-ae7a-ba1c91f8687b)
+
+
 
 
 
