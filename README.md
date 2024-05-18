@@ -4,7 +4,7 @@
 
 <h1> Network Security Groups (NSGs) and Using WireShark to Observe Network Traffic </h1>
 
-In this tutorial, we'll use Remote Desktop Connection (RDP) to connect to our Windows VM, download/install WireShark, use Network Security Groups to change some Inbound Rules, and use WireShark to observe network traffic between our two VMs.
+In this tutorial, we'll use Remote Desktop Connection (RDP) to connect to our Windows VM, download/install WireShark, use Network Security Groups to change some Inbound Rules, use WireShark to filter for some network protocols, and observe network traffic between our two VMs.
 
 <h2> Environments and Technologies Used: </h2>
 
@@ -93,7 +93,7 @@ In this tutorial, we'll use Remote Desktop Connection (RDP) to connect to our Wi
 ![Capture](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/cacb4d69-22f2-42fe-9dcd-4f001e7a2811)
 ![Capture](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/822c36db-b066-4207-a7cd-acb549b38fbd)
 
-- We noticed after some time for the rule to take effect that our Windows 10 VM is no longer receiving replies from our Linux VM. That's because we've blocked all ping requests using the block ICMP rule via Network Security Groups.
+- We noticed after some time that the rule was taking effect, and our Windows 10 VM is no longer receiving replies from our Linux VM. That's because we've blocked all ping requests using the block ICMP rule via Network Security Groups.
 ![Capture](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/19dfb78c-e798-42fd-b915-274fafb61562)
 
 - We'll return to our NSG panel and re-allow ICMP traffic for our Linux VM.
