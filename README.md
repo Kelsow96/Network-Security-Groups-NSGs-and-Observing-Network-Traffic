@@ -44,10 +44,10 @@ In this tutorial, we'll use Remote Desktop Connection (RDP) to connect to our Wi
   5. Filter for DHCP traffic within WireShark
       - Within our Windows 10 VM command line, attempt to issue a new IP address with ipconfig/renew
       - Observe DHCP traffic within WireShark
-  7. Filter for DNS traffic within WireShark
+  6. Filter for DNS traffic within WireShark
       - Within our Windows 10 VM command line, use nslookup to see what google.com's IP address is
       - Observe DNS traffic within WireShark
-  9. Filter for RDP traffic within WireShark
+  7. Filter for RDP traffic within WireShark
       - Within WireShark, use tcp.port == 3389 to filter for RDP traffic
       - Observe DNS traffic within WireShark
     
@@ -120,10 +120,30 @@ In this tutorial, we'll use Remote Desktop Connection (RDP) to connect to our Wi
 
     - We can now exit our connection by typing "exit" in our Powershell window.
 ![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/4e6c209a-3d39-4c05-ae7a-ba1c91f8687b)
+  <br>
+  <br/>
 
+5. We'll now filter for DHCP traffic within WireShark.
 
+    - In our command line, we'll type "ipconfig /renew". Once we execute that command, we should see some DHCP traffic within WireShark.
+![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/7f666ce4-5988-4468-8a7b-50535fb6474b)
+![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/73e3ca64-725b-483d-b0ce-4d0e3e07b7f6)
+  <br>
+  <br/>
 
+6. Next we'll filter for DNS traffic in WireShark.
 
+    - In our command line, we'll type "nslookup" + any public website to see the public IP address of that said website.
+    - Ex. nslookup www.google.com
+![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/d0c7ac00-82b0-42d4-a66d-7a6172467497)
+  <br>
+  <br/>
 
+7. Finally we'll filter for RDP traffic using tcp.port == 3389 in WireShark.
 
-
+    - When we filter for RDP traffic, we notice it constantly spamming. That's because we're currently using RDP to connect our host computer to our Windows VM. Anything we do within our VM is constantly being sent over the network as RDP traffic. 
+![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/28e93b0d-0349-4420-ad28-136e38bcbef4)
+  <br>
+  <br/>
+  
+In this tutorial, we've walked through the process of connecting to a Windows VM using Remote Desktop Connection (RDP), downloading and installing WireShark, configuring Network Security Groups to adjust Inbound Rules, and utilizing WireShark to filter and observe network protocols. By following these steps, we now have the foundational skills to monitor and analyze network traffic between virtual machines effectively.
