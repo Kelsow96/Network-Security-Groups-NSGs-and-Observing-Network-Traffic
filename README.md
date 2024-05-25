@@ -4,16 +4,14 @@
 
 <h1> Network Security Groups (NSGs) and Using WireShark to Observe Network Traffic </h1>
 
-<h2> What is Network Security Groups (NSGs) </h2>
+<h2> What is Network Security Groups (NSGs)? </h2>
 
 Network Security Groups (NSGs) are a key feature in Microsoft Azure that act as virtual firewalls. Based on security rules, they control network traffic flow to and from Azure resources, such as virtual machines and subnets. These rules determine whether traffic is allowed or denied based on factors like IP addresses, ports, and protocols. NSGs are crucial for maintaining network security, allowing administrators to manage access and protect resources effectively.
 
 <h2> What is Network Traffic? </h2>
 Network traffic refers to the flow of data over a computer network. It encompasses all the data devices send and receive, including web browsing, file transfers, emails, and streaming media. This traffic is essential for communication between devices on the network and can be monitored to ensure smooth operation, diagnose issues, and maintain security.
-<br>
-<br/>
 
-<h2>Overview</h2>
+<h2> Overview </h2>
 In this tutorial, we'll use Remote Desktop Connection (RDP) to connect to our Windows VM, download/install WireShark, use Network Security Groups to change some Inbound Rules, use WireShark to filter for some network protocols, and observe network traffic between our two VMs.
 
 <h2> Environments and Technologies Used: </h2>
@@ -155,5 +153,6 @@ In this tutorial, we'll use Remote Desktop Connection (RDP) to connect to our Wi
 ![image](https://github.com/Kelsow96/Network-Security-Groups-NSGs-and-Observing-Network-Traffic/assets/169297569/28e93b0d-0349-4420-ad28-136e38bcbef4)
   <br>
   <br/>
-  
-In this tutorial, we've walked through the process of connecting to a Windows VM using Remote Desktop Connection (RDP), downloading and installing WireShark, configuring Network Security Groups to adjust Inbound Rules, and utilizing WireShark to filter and observe network protocols. By following these steps, we now have the foundational skills to monitor and analyze network traffic between virtual machines effectively.
+
+<h2> Summary </h2>  
+In this tutorial, we've walked through the process of connecting to a Windows VM using Remote Desktop Connection (RDP), downloading and installing WireShark, configuring Network Security Groups to adjust Inbound Rules, and utilizing WireShark to filter and observe network protocols. By following these steps, we have the foundational skills to monitor and analyze network traffic between virtual machines effectively.
