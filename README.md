@@ -155,4 +155,4 @@ In this tutorial, we'll use Remote Desktop Connection (RDP) to connect to our Wi
   <br/>
 
 <h2> Summary </h2>  
-In this tutorial, we've walked through the process of connecting to a Windows VM using Remote Desktop Connection (RDP), downloading and installing WireShark, configuring Network Security Groups to adjust Inbound Rules, and utilizing WireShark to filter and observe network protocols. By following these steps, we have the foundational skills to monitor and analyze network traffic between virtual machines effectively.
+- In this tutorial, we've walked through the process of connecting to a Windows VM using Remote Desktop Connection (RDP), downloading and installing WireShark, configuring Network Security Groups to adjust Inbound Rules, and utilizing WireShark to filter and observe network protocols. By following these steps, we have the foundational skills to monitor and analyze network traffic between virtual machines effectively.
