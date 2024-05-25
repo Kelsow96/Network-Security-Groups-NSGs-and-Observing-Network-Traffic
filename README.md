@@ -4,6 +4,15 @@
 
 <h1> Network Security Groups (NSGs) and Using WireShark to Observe Network Traffic </h1>
 
+<h2> What is Network Security Groups (NSGs) </h2>
+
+Network Security Groups (NSGs) are a key feature in Microsoft Azure that act as virtual firewalls. They control network traffic flow to and from Azure resources, such as virtual machines and subnets, based on security rules. These rules determine whether traffic is allowed or denied based on factors like IP addresses, ports, and protocols. NSGs are crucial for maintaining network security, allowing administrators to manage access and protect resources effectively.
+
+<h2> What is Network Traffic? </h2>
+Network traffic refers to the flow of data over a computer network. It encompasses all the data devices send and receive, including web browsing, file transfers, emails, and streaming media. This traffic is essential for communication between devices on the network and can be monitored to ensure smooth operation, diagnose issues, and maintain security.
+<br>
+<br/>
+
 In this tutorial, we'll use Remote Desktop Connection (RDP) to connect to our Windows VM, download/install WireShark, use Network Security Groups to change some Inbound Rules, use WireShark to filter for some network protocols, and observe network traffic between our two VMs.
 
 <h2> Environments and Technologies Used: </h2>
